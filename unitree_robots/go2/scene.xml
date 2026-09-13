@@ -29,5 +29,12 @@
     <geom pos="3 0 0.02" type="box"  size="0.24 2 0.6" quat="1.0 0 0 0"/>
     <geom pos="3.2 0 0.02" type="box"  size="0.25 2 0.75" quat="1.0 0 0 0"/>
     <geom pos="3.4 0 0.02" type="box"  size="0.26 2 0.9" quat="1.0 0 0 0"/>
+
+    <!-- Looming ball: dark sphere approaching from front (visual threat) -->
+    <body name="looming_ball" pos="4.0 0 0.3">
+      <freejoint name="looming_ball_joint"/>
+      <geom name="looming_ball_geom" type="sphere" size="0.15"
+            rgba="0.05 0.05 0.05 1" mass="0.001"/>
+    </body>
   </worldbody>
 </mujoco>
